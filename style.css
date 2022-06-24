@@ -1,0 +1,17 @@
+:root {
+    background: #22201c;
+    color: #bbb;
+    padding: 1.5rem;
+    --sans: system-ui, sans-serif;
+    --serif: source_serif_pro, serif;
+}
+h1 {
+    color: #ccc;
+    font-family: var(--sans);
+}
+body {
+    margin: 1rem auto;
+    max-width: 650px;
+    font-family: var(--sans);
+}
+a { color: inherit; }
