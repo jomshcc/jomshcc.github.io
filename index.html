@@ -1,11 +1,13 @@
+<!DOCTYPE html>
+<html lang=en>
 <title>jomsh.cc—John Sherrell</title>
-<link rel=icon href=/beaker300.svg sizes=any type=image/svg+xml>
+<link rel=icon href=beaker300.svg sizes=any type=image/svg+xml>
 <link rel=stylesheet href=style.css>
 <!--
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
 -->
 <meta charset=utf-8>
-<meta name=viewport content='width=device-width,initial-scale=1'>
+<meta name=viewport content='width=device-width'>
 
 <header></header>
 
@@ -14,9 +16,32 @@
 
 </main>
 
+<footer>
+
+<a href="https://github.com/jomshcc" title="Github"><svg width="24" height="24" fill="currentColor">
+  <use href="svg/icons.svg#github"/>
+</svg></a>
+
+<!--
+<svg width="24" height="24" fill="currentColor">
+  <use href="svg/icons.svg#facebook"/>
+</svg>
+-->
+
+<a href="https://twitter.com/intent/follow?screen_name=jomshcc" title="Twitter"><svg width="24" height="24" fill="currentColor">
+  <use href="svg/icons.svg#twitter"/>
+</svg></a>
+
+<a href="https://instagram.com/jomsh.cc" title="Instagram"><svg width="24" height="24" fill="currentColor">
+  <use href="svg/icons.svg#instagram"/>
+</svg></a>
+
+</footer>
+
 <script data-goatcounter='https://jomsh.goatcounter.com/count' async src='https://gc.zgo.at/count.js'></script>
 <script>
-  if (location.protocol != 'file:' && location.search != '?test') {
+  if (location.protocol != 'file:' && location.hostname != 'localhost' && location.search != '?test') {
     fetch('https://j-kqz.s3.amazonaws.com/c?' + location.host + location.pathname, { mode: 'no-cors' }).catch(e => e)
   }
 </script>
+</html>
