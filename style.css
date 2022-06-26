@@ -7,33 +7,18 @@
   font-family: var(--sans);
   padding: 1.5rem;
 }
-h1 {
-  margin-top: 0;
-  color: #ccc;
-}
 body {
   max-width: 650px;
-  margin: 1rem auto;
-  text-align: center;
+  margin: auto;
 }
 a { color: inherit; text-decoration: inherit; }
-svg.icon {
-  width: 36px;
-  height: 36px;
-  margin-inline-end: 1rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1px;
-}
+header { text-align: center; }
 img.mainpic {
   border: solid 1px;
   border-radius: 50%;
   /*clip-path: circle(50%);*/
 }
 nav {
-  --grad: linear-gradient(45deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
   --grad: linear-gradient(to top right, cyan, dodgerblue);
   width: max-content;
   padding: 1px;
@@ -50,22 +35,31 @@ nav > div {
 nav > div > ul {
   padding: .5rem 0;
   margin: 0 auto;
-  text-align: left;
+  list-style: none;
   background-image: var(--grad); /*linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
   -webkit-background-clip: text;
   background-clip: text;
 }
-nav li {
+nav li > a {
   display: block;
   padding: .5rem 2rem;
-  cursor: pointer;
 }
-nav li:hover {
+nav li > a:hover {
   color: transparent;
 }
-nav li:hover svg.icon {
+nav li > a:hover svg.icon {
   stroke: url(#grad);
 }
-li * {
+nav li > a * {
   vertical-align: middle;
+}
+svg.icon {
+  width: 36px;
+  height: 36px;
+  margin-inline-end: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1px;
 }
