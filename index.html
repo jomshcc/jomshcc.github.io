@@ -4,43 +4,56 @@
 <link rel=icon href=/img/beaker300.svg sizes=any type=image/svg+xml>
 <link rel=stylesheet href=style.css>
 <!--
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+<link rel=stylesheet href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0' />
 -->
 <meta charset=utf-8>
 <meta name=viewport content='width=device-width'>
 
+<svg width=0 height=0>
+<defs>
+  <linearGradient id=grad x1=1 y1=0 x2=0 y2=1>
+    <stop offset=0% stop-color=cyan />
+    <stop offset=100% stop-color=dodgerblue />
+  </linearGradient>
+</defs>
+</svg>
+
 <header>
+<div><img src=img/john-600.jpg width=200 class=mainpic></div>
+<h1>John Sherrell</h1>
 </header>
 
-<main>
-<h1>John Sherrell</h1>
-<p>Deal with it.</p>
-</main>
-
-<footer>
-
-<div><img src="/img/john-600.jpg" width=150></div>
-
-<a href="https://github.com/jomshcc" title="Github"><svg width="24" height="24" fill="currentColor">
-  <use href="/img/icons.svg#github"/>
-</svg></a>
-
-<!--
-<svg width="24" height="24" fill="currentColor">
-  <use href="/img/icons.svg#facebook"/>
-</svg>
--->
-
-<a href="https://twitter.com/intent/follow?screen_name=jomshcc" title="Twitter"><svg width="24" height="24" fill="currentColor">
-  <use href="/img/icons.svg#twitter"/>
-</svg></a>
-
-<a href="https://instagram.com/jomsh.cc" title="Instagram"><svg width="24" height="24" fill="currentColor">
-  <use href="/img/icons.svg#instagram"/>
-</svg></a>
-
-<a href="mailto:john@jomsh.cc">john@jomsh.cc</a>
-</footer>
+<nav>
+<div>
+<ul class=menu onclick='event.path.find(e => e instanceof HTMLLIElement)?.firstElementChild?.click()'>
+<li>
+  <a href='https://github.com/jomshcc' title='Github'>
+    <svg class=icon><use href='/img/feather-sprite.svg#github'/></svg>
+    @jomshcc
+  </a>
+<li>
+  <a href='https://twitter.com/intent/follow?screen_name=jomshcc' title='Twitter'>
+    <svg class=icon><use href='/img/feather-sprite.svg#twitter'/></svg>
+    @jomshcc
+  </a>
+<li>
+  <a href='https://instagram.com/jomsh.cc' title='Instagram'>
+    <svg class=icon><use href='/img/feather-sprite.svg#instagram'/></svg>
+    @jomsh.cc
+  </a>
+<li>
+  <a href='mailto:john@jomsh.cc'>
+    <svg class=icon><use href='/img/feather-sprite.svg#mail'/></svg>
+    john@jomsh.cc
+  </a>
+<li>
+  <a href='resume'>
+    <svg class=icon><use href='/img/feather-sprite.svg#clipboard'/></svg>
+    résumé
+  </a>
+</ul>
+</div>
+</nav>
 
 <script data-goatcounter='https://jomsh.goatcounter.com/count' async src='https://gc.zgo.at/count.js'></script>
 <script src=log.js async></script>
