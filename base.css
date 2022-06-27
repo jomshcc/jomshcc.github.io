@@ -17,3 +17,13 @@ body { max-width: 650px; margin: auto; }
 a { color: inherit; }
 
 h1 { font-family: var(--heading); }
+
+svg.feather {
+  width: 1.5em;
+  height: 1.5em;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
+}

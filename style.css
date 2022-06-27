@@ -35,19 +35,13 @@ nav li > a {
   text-decoration: none;
 }
 nav li > a:hover { color: transparent; font-weight: bold; }
-nav li > a:hover svg.icon { stroke: url(#grad); }
+nav li > a:hover svg.feather { stroke: url(#grad); }
 nav li > a * { vertical-align: middle; }
-svg.icon {
-  width: 36px;
-  height: 36px;
-  margin-inline-end: 1rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1px;
-}
 footer {
   font-size: small;
   margin-top: 1.5rem;
+}
+nav li svg.feather {
+  font-size: 20pt;
+  margin-inline-end: 1rem;
 }
