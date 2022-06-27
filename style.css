@@ -13,7 +13,7 @@
 }
 body { max-width: 650px; margin: auto; text-align: center; }
 
-a { color: inherit; text-decoration: inherit; }
+a { color: inherit; }
 
 h1 { font-family: var(--heading); color: #ccc; }
 img.mainpic {
@@ -44,7 +44,11 @@ nav > div > ul {
   -webkit-background-clip: text;
   background-clip: text;
 }
-nav li > a { display: block; padding: .5rem 2rem; }
+nav li > a {
+  display: block;
+  padding: .5rem 2rem;
+  text-decoration: none;
+}
 nav li > a:hover { color: transparent; font-weight: bold; }
 nav li > a:hover svg.icon { stroke: url(#grad); }
 nav li > a * { vertical-align: middle; }
