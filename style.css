@@ -12,27 +12,27 @@
   padding: 1.5rem;
 }
 body { max-width: 650px; margin: auto; }
+
 a { color: inherit; text-decoration: inherit; }
+
 header { text-align: center; }
 h1 { font-family: var(--heading); color: #ccc; }
 img.mainpic {
-  border: solid 1.5px;
+  background: var(--grad) border-box;
+  border: solid 1.5px transparent;
   border-radius: 50%;
   /*clip-path: circle(50%);*/
 }
+
 nav {
+  --brad: 1em;
   width: max-content;
-  padding: 1.5px;
-  border-radius: 1em;
+  border: solid 1.5px transparent;
+  border-radius: var(--brad);
   margin: auto;
 }
-nav:hover {
-  background-image: var(--grad);
-}
-nav > div {
-  background: var(--bg);
-  border-radius: 1em;
-}
+nav:hover { background: var(--grad) border-box; }
+nav > div { background: var(--bg); border-radius: var(--brad); }
 nav > div > ul {
   padding: .5rem 0;
   margin: 0 auto;
@@ -41,20 +41,10 @@ nav > div > ul {
   -webkit-background-clip: text;
   background-clip: text;
 }
-nav li > a {
-  display: block;
-  padding: .5rem 2rem;
-}
-nav li > a:hover {
-  color: transparent;
-  font-weight: bold;
-}
-nav li > a:hover svg.icon {
-  stroke: url(#grad);
-}
-nav li > a * {
-  vertical-align: middle;
-}
+nav li > a { display: block; padding: .5rem 2rem; }
+nav li > a:hover { color: transparent; font-weight: bold; }
+nav li > a:hover svg.icon { stroke: url(#grad); }
+nav li > a * { vertical-align: middle; }
 svg.icon {
   width: 36px;
   height: 36px;
