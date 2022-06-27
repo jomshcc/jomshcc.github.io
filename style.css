@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Shrikhand&display=swap');
+@import url(fonts/fonts.css);
 
 :root {
-  --sans: system-ui, sans-serif;
-  --serif: source_serif_pro, serif;
+  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --heading: Shrikhand, Cooper, 'Bookman Old Style', bookman;
+  --grad: linear-gradient(to top right, cyan, dodgerblue);
   --bg: #22201c;
-  background: var(--bg);
   color: #bbb;
+  background: var(--bg);
   font-family: var(--sans);
   padding: 1.5rem;
 }
-body {
-  max-width: 650px;
-  margin: auto;
-}
+body { max-width: 650px; margin: auto; }
 a { color: inherit; text-decoration: inherit; }
 header { text-align: center; }
-h1 { font: xx-large Shrikhand; color: #ccc; }
+h1 { font-family: var(--heading); color: #ccc; }
 img.mainpic {
   border: solid 1.5px;
   border-radius: 50%;
   /*clip-path: circle(50%);*/
 }
 nav {
-  --grad: linear-gradient(to top right, cyan, dodgerblue);
   width: max-content;
   padding: 1.5px;
   border-radius: 1em;
@@ -39,7 +37,7 @@ nav > div > ul {
   padding: .5rem 0;
   margin: 0 auto;
   list-style: none;
-  background-image: var(--grad); /*linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+  background-image: var(--grad);
   -webkit-background-clip: text;
   background-clip: text;
 }
