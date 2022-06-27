@@ -14,14 +14,14 @@ body {
 a { color: inherit; text-decoration: inherit; }
 header { text-align: center; }
 img.mainpic {
-  border: solid 1px;
+  border: solid 1.5px;
   border-radius: 50%;
   /*clip-path: circle(50%);*/
 }
 nav {
   --grad: linear-gradient(to top right, cyan, dodgerblue);
   width: max-content;
-  padding: 1px;
+  padding: 1.5px;
   border-radius: 1em;
   margin: auto;
 }
@@ -46,6 +46,7 @@ nav li > a {
 }
 nav li > a:hover {
   color: transparent;
+  font-weight: bold;
 }
 nav li > a:hover svg.icon {
   stroke: url(#grad);

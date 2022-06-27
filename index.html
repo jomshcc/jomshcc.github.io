@@ -49,7 +49,7 @@
 <li>
   <a href='resume'>
     <svg class=icon><use href='/img/feather-sprite.svg#clipboard'/></svg>
-    résumé
+    Résumé
   </a>
 </ul>
 </div>
@@ -57,4 +57,11 @@
 
 <script data-goatcounter='https://jomsh.goatcounter.com/count' async src='https://gc.zgo.at/count.js'></script>
 <script src=log.js async></script>
+<script>
+  window.addEventListener('load', () => {
+    const nav = document.querySelector('nav')
+    // 4px is the minimum on Edge/Windows
+    nav.style.width = nav.clientWidth + 8 + 'px'
+  })
+</script>
 </html>
