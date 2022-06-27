@@ -1,21 +1,6 @@
-@import url(fonts/fonts.css);
+@import url(base.css);
 
-:root {
-  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --heading: Shrikhand, Cooper, 'Bookman Old Style', bookman;
-  --grad: linear-gradient(to top right, cyan, dodgerblue);
-  --bg: #22201c;
-  color: #bbb;
-  background: var(--bg);
-  font-family: var(--sans);
-  padding: 0 1.5rem;
-}
-body { max-width: 650px; margin: auto; text-align: center; }
-
-a { color: inherit; }
-
-h1 { font-family: var(--heading); color: #ccc; }
+body { text-align: center; }
 img.mainpic {
   background: var(--grad) border-box;
   border: solid 1px transparent;
