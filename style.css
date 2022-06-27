@@ -11,11 +11,10 @@
   font-family: var(--sans);
   padding: 1.5rem;
 }
-body { max-width: 650px; margin: auto; }
+body { max-width: 650px; margin: auto; text-align: center; }
 
 a { color: inherit; text-decoration: inherit; }
 
-header { text-align: center; }
 h1 { font-family: var(--heading); color: #ccc; }
 img.mainpic {
   background: var(--grad) border-box;
@@ -27,11 +26,15 @@ img.mainpic {
 nav {
   --brad: 1em;
   width: max-content;
-  border: solid 1.5px transparent;
+  text-align: left;
+  border: solid 1.5px #444;
   border-radius: var(--brad);
   margin: auto;
 }
-nav:hover { background: var(--grad) border-box; }
+nav:hover {
+  background: var(--grad) border-box;
+  border-color: transparent;
+}
 nav > div { background: var(--bg); border-radius: var(--brad); }
 nav > div > ul {
   padding: .5rem 0;
@@ -54,4 +57,8 @@ svg.icon {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1px;
+}
+footer {
+  font-size: small;
+  margin-top: 1.5rem;
 }
