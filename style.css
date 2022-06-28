@@ -31,11 +31,7 @@ nav li > a {
 nav li > a:hover { color: transparent; font-weight: bold; }
 nav li > a:hover svg.feather { stroke: url(#grad); }
 nav li > a * { vertical-align: middle; }
-footer {
-  font-size: small;
-  margin-top: 1.5rem;
-}
 nav li svg.feather {
-  font-size: 20pt;
+  font-size: xx-large;
   margin-inline-end: 1rem;
 }

@@ -28,11 +28,17 @@ a { color: inherit; }
 h1 { font-family: var(--title); }
 
 svg.feather {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.2em;
+  height: 1.2em;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.5px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  margin-top: 2rem;
 }
