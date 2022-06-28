@@ -3,8 +3,10 @@
 :root {
   --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --heading: Shrikhand, Cooper, 'Bookman Old Style', bookman;
-  --grad: linear-gradient(to top right, cyan, dodgerblue);
+  --heading: Cooper, cooper_black, 'Bookman Old Style', bookman;
+  --title: Shrikhand, var(--heading);
+  --stop1: 0%; --stop2: 100%;
+  --grad: linear-gradient(to top right, cyan var(--stop1), dodgerblue var(--stop2));
   --bg: #22201c;
   --fg: #ccc;
   color: var(--fg);
@@ -14,9 +16,16 @@
 }
 body { max-width: 650px; margin: auto; }
 
+img.mainpic {
+  background: var(--grad) border-box;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  /*clip-path: circle(50%);*/
+}
+
 a { color: inherit; }
 
-h1 { font-family: var(--heading); }
+h1 { font-family: var(--title); }
 
 svg.feather {
   width: 1.5em;

@@ -1,12 +1,6 @@
 @import url(base.css);
 
 body { text-align: center; }
-img.mainpic {
-  background: var(--grad) border-box;
-  border: solid 1px transparent;
-  border-radius: 50%;
-  /*clip-path: circle(50%);*/
-}
 
 nav {
   --brad: 1em;
