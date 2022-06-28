@@ -29,3 +29,9 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'cooper_black';
+    src: url('cooper_black_regular-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
