@@ -6,7 +6,7 @@ nav {
   --brad: 1em;
   width: max-content;
   text-align: left;
-  border: solid 1px #444;
+  border: solid 1.5px #444;
   border-radius: var(--brad);
   margin: auto;
 }
