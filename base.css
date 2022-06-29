@@ -5,14 +5,13 @@
   --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --heading: Cooper, cooper_black, 'Bookman Old Style', bookman;
   --title: Shrikhand, var(--heading);
-  --stop1: 0%; --stop2: 100%;
-  --grad: linear-gradient(to top right, cyan var(--stop1), dodgerblue var(--stop2));
+  --grad: linear-gradient(to top right, cyan, dodgerblue);
   --bg: #22201c;
   --fg: #ccc;
   color: var(--fg);
   background: var(--bg);
   font-family: var(--sans);
-  padding: 1.5rem;
+  padding: 1rem;
 }
 body { max-width: 650px; margin: auto; }
 
@@ -25,7 +24,7 @@ img.mainpic {
 
 a { color: inherit; }
 
-h1 { font-family: var(--title); }
+h1 { font-family: var(--heading); }
 
 svg.feather {
   width: 1.2em;
