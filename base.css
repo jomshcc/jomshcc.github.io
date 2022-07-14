@@ -15,7 +15,7 @@
 }
 body { max-width: 650px; margin: auto; }
 
-img.mainpic {
+header img {
   background: var(--grad) border-box;
   border: solid 1.5px transparent;
   border-radius: 50%;
