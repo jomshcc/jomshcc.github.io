@@ -1,6 +1,15 @@
 @import url(base.css);
 
-body { text-align: center; }
+body {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  font-size: small;
+  margin-top: 1.5rem;
+}
 
 h1 { margin-block: .4em; }
 nav {
