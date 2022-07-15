@@ -53,7 +53,7 @@ footer {
 .contact > h2::after { content: ':\A0'; }
 
 h1 {
-    font: 900 italic 36pt system-ui;
+    font: 900 italic 3em system-ui;
     text-shadow: .05em .05em .1em black;
     color: #bbb;
     text-align: center;

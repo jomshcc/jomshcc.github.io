@@ -11,7 +11,7 @@ footer {
   margin-top: 1.5rem;
 }
 
-h1 { margin-block: .4em; }
+h1 { font-size: 2.25em; margin-block: .4em; }
 nav {
   --brad: 1em;
   width: max-content;
