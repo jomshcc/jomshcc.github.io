@@ -13,7 +13,14 @@
 
   <script data-goatcounter='https://jomsh.goatcounter.com/count' async src='https://gc.zgo.at/count.js'></script>
   <script src=/s3-log.js async></script>
+  <noscript>
+    <!-- Important to configure S3 object to send `Cache-Control: max-age=0` header -->
+    <link rel=preload as=image referrerpolicy=unsafe-url
+      href='https://jomshcc.s3.us-east-2.amazonaws.com/c.gif?ns'>
+  </noscript>
   <script>
+    // Increase width of main menu just a tiny bit so it doesn't twitch
+    // when the font is made bold on hover.
     window.addEventListener('DOMContentLoaded', () => {
       const nav = document.querySelector('nav')
       // 4px is the minimum on Edge/Windows
